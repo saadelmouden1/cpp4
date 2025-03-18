@@ -1,12 +1,12 @@
 #include "Cat.hpp"
 
-Cat::Cat(): Animal()
+Cat::Cat()
 {
 	this->type = "Cat";
 	std::cout << "Cat Default Constructor called" << std::endl;
 }
 
-Cat::Cat(const Cat &cat): Animal()
+Cat::Cat(const Cat &cat)
 {
 	std::cout << "Cat Copy Constructor called" << std::endl;
 	*this = cat;

@@ -1,11 +1,12 @@
 #include "Dog.hpp"
 
-Dog::Dog():type("Dog"):animal()
+Dog::Dog()
 {
+	type= "Dog";
 	std::cout << "Dog Default Constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog &dog):animal()
+Dog::Dog(const Dog &dog)
 {
 	std::cout << "Dog Copy Constructor called" << std::endl;
 	*this = dog;
@@ -29,5 +30,5 @@ Dog &Dog::operator=(const Dog &dog)
 
 void	Dog::makeSound(void)const
 {
-	std::cout << this->getType() << ": **Woof**" << std::endl;
+	std::cout << this->getType() << ": Woof" << std::endl;
 }

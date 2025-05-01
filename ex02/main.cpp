@@ -9,8 +9,8 @@
 int main()
 {
 
-	//const Animal *animal = new Animal();
-	//animal->makeSound();
+	// const Animal *animal = new Animal();
+	// animal->makeSound();
 	std::cout << "Constructing" << std::endl;
 	const Animal	*meta[10];
 	for (int i = 0; i < 10; i++)

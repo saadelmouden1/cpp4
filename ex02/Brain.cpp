@@ -35,7 +35,7 @@ const std::string	Brain::getIdea(size_t i)const
 	if (i < 100)
 		return(this->ideas[i]);
 	else
-		return ("\033[33mThere is only 100 ideas per brain.\033[0m");
+		return ("There is only 100 ideas per brain.");
 }
 
 const std::string *Brain::getIdeaAddress(size_t i)const
@@ -54,5 +54,5 @@ void	Brain::setIdea(size_t i, std::string idea)
 	if (i < 100)
 		this->ideas[i] = idea;
 	else
-		std::cout << "\033[33mThere is only 100 ideas per brain.\033[0m" << std::endl;
+		std::cout << "There is only 100 ideas per brain." << std::endl;
 }

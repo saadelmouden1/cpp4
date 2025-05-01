@@ -16,7 +16,7 @@ class WrongAnimal
 	// Overloaded Operators
 		WrongAnimal &operator=(const WrongAnimal &animal);
 
-		virtual void makeSound(void)const;
+		void makeSound(void)const;
 		std::string getType(void)const;
 
 };
